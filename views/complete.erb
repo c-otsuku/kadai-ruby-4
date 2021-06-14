@@ -45,10 +45,9 @@
         電話番号：<%= name = params["target_tel"] %><br>
         内容：<% name = params["target_content"] %><%= name.gsub(/\r\n|\r|\n/, "<br>") %>
         
-        <div class="text-center mb-4">
-            <!-- 「戻る」ボタンを緑色にする設定を追加 -->
-            <a href="contact.html" class="btn btn-success">戻る</a>
-        </div>
+        <form action="/" method="POST" class="text-center mb-4">
+            <input type="submit" value="戻る" class="btn btn-success">
+        </form>
         
     </div>
     
